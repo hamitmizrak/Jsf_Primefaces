@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1> Yeni Proje yaparken </h1>
+<p>Tutorials_008_JSF_Primefaces
+1-)Maven project --> Next -->  quick start --> Group ID= Paket ADı + Articfact Id= Proje ADıdır.
+2-)Right Click --> Java Buid Path --> Libraries --> JRE System Libraries --> Alternate JRE (JDK 1.8 gibi istenen sürüm yap)
+3-)Right Click --> Java Compiler --> 1.8 
+4-)Right Click --> Project Facets --> Convert to -- > Dynamics Web (3.1) + JSF (2.2) + Java(1.8) +Runtimes (Server seç)
+5-)Right Click --> Project Facets --> Java Server Faces --> Kütüphane Seç(Hepsi)
+
+6-) Web.xml
+			  <servlet-mapping>
+				<servlet-name>Faces Servlet</servlet-name>
+				<url-pattern>*.jsf</url-pattern>
+				<url-pattern>*.xhtml</url-pattern>
+			  </servlet-mapping>
+			  
+			  
+			  
+			  
+7-) index.xhtml 
+				<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+				<html xmlns="http://www.w3.org/1999/xhtml"
+					  xmlns:ui="http://java.sun.com/jsf/facelets"
+					  xmlns:f="http://java.sun.com/jsf/core"
+					  xmlns:h="http://java.sun.com/jsf/html"
+					  xmlns:p="http://primefaces.org/ui"> 
+
+				<h:head></h:head> 
+				<body> 
+				<h:outputLabel value="sonuc44" />
+				<p:rating>asd</p:rating>
+
+				</body> 
+				</html>
+				
+				
+Run As (ÇAlıştır)	
+			
+			  
+  
+8-)Pom.xml
+			<dependencies>
+			   <!-- https://mvnrepository.com/artifact/com.sun.faces/mysql 8.0.13 -->
+				 <dependency>
+					<groupId>mysql</groupId>
+					<artifactId>mysql-connector-java</artifactId>
+					<scope>runtime</scope>
+					<version>8.0.13</version>
+				</dependency>
+				
+				<!-- https://mvnrepository.com/artifact/com.sun.faces/Hibernates-->
+				<dependency>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-core</artifactId>
+					<version>5.2.6.Final</version>
+				</dependency>
+		  </dependencies> 
+		  
+8-)Right Click -->Maven Update Project 
+9-)Right Click --> run AS -- Maven Clean
+10-)Right Click --> run as --> Maven Install
+11-)Project --> Clean
+</p>
+</body>
+</html>
