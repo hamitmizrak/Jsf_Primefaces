@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns = "http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"> 
+   <head> 
+      <title>JSF Tutorial!</title> 
+   </head> 
+   
+   <h:body> 
+      <h2>h:messages example</h2> 
+      <hr /> 
+      
+      <h:form>
+         
+            <h:outputLabel value = "Kullanıcı adını giriniz"  for = "username"/> 
+            <h:inputText  id = "username"  label = "UserName"    required = "true"/>
+            <h:message    for = "username" style = "color:blue" /> <br/>
+        
+            <h:commandButton id = "submit" value = "Submit" action = "/"/>   
+      </h:form> 
+   
+   </h:body> 
+</html>
