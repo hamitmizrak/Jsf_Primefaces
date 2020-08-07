@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns = "http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"> 
+   <head> 
+      <title>JSF Tutorial!</title> 
+   </head> 
+   
+   <h:body> 
+    
+      
+         <!-- CHECKBOX
+   selectBooleanCheckbox
+   selectManyCheckbox
+   selectManyMenu 
+   selectManyListbox 
+   
+        RADIOBUTTON
+   selectOneRadio
+   selectOneMenu
+   selectOneListbox 
+    -->
+      
+   <h:form>
+     <h2>selectOneMenu</h2> 
+   <h:outputText  value="Alanlar" />
+      <h:selectOneMenu id="oneRadio" value="Kitap1" layout="pageDirection">
+      <f:selectItem itemLabel="JSP" itemValue="1"/>
+       <f:selectItem itemLabel="JSF" itemValue="2"/>
+       <f:selectItem itemLabel="Servlet" itemValue="3"/>
+      </h:selectOneMenu> 
+      <hr/><hr/>
+      
+        <h2>selectOneListbox</h2> 
+       <h:selectOneListbox  id="oneRadio2" value="Kitap2" layout="pageDirection">
+      <f:selectItem itemLabel="JSP" itemValue="1"/>
+       <f:selectItem itemLabel="JSF" itemValue="2"/>
+       <f:selectItem itemLabel="Servlet" itemValue="3"/>
+      </h:selectOneListbox> 
+      <br/>
+        <h:commandButton action="/" value="Gönder" />
+      </h:form>
+
+   
+   </h:body> 
+</html>
